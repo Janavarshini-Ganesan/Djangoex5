@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Created</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8df5b3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .main {
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly opaque for better readability */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        h1, h2, h3 {
+            color: #4caf50;
+        }
+
+        p {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 500px) {
+            .main {
+                width: 100%; /* Adjust to 100% for small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Kamaraj College of Engineering and Technology</h1>
+        <h2>Web Applications using Django Framework</h2>
+        <p>Janavarshini G, B.TECH IT-B</p>
+        <h3>Creating Session using Django</h3>
+        <p>Welcome {{ username }},</p>
+        <p>Session created!!!!!</p>
+    </div>
+</body>
+</html>
